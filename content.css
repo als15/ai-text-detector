@@ -1,0 +1,126 @@
+#ai-detector-tooltip {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ai-detector-tooltip .ai-detector-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 220px;
+  max-width: 260px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#ai-detector-tooltip .ai-detector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#ai-detector-tooltip .ai-detector-title {
+  font-weight: 600;
+  color: #00d9ff;
+}
+
+#ai-detector-tooltip .ai-detector-close {
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+#ai-detector-tooltip .ai-detector-close:hover {
+  color: #fff;
+}
+
+#ai-detector-tooltip .ai-detector-score {
+  text-align: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+#ai-detector-tooltip .ai-detector-score .score-number {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#ai-detector-tooltip .ai-detector-score .score-label {
+  display: block;
+  font-size: 12px;
+  color: #a0a0a0;
+  margin-top: 4px;
+}
+
+#ai-detector-tooltip .ai-detector-score.ai .score-number {
+  color: #ff5252;
+}
+
+#ai-detector-tooltip .ai-detector-score.human .score-number {
+  color: #4caf50;
+}
+
+#ai-detector-tooltip .ai-detector-score.mixed .score-number {
+  color: #ffc107;
+}
+
+#ai-detector-tooltip .ai-detector-verdict {
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+#ai-detector-tooltip .ai-detector-verdict.ai {
+  background: rgba(255, 82, 82, 0.2);
+  color: #ff5252;
+}
+
+#ai-detector-tooltip .ai-detector-verdict.human {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+#ai-detector-tooltip .ai-detector-verdict.mixed {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+#ai-detector-tooltip .ai-detector-stats {
+  text-align: center;
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+#ai-detector-tooltip .ai-detector-error {
+  color: #ff5252;
+  text-align: center;
+}
+
+#ai-detector-tooltip .ai-detector-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 217, 255, 0.2);
+  border-top-color: #00d9ff;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  animation: ai-detector-spin 1s linear infinite;
+}
+
+@keyframes ai-detector-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
