@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Text Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Text Detector</h1>
+
+    <div id="no-selection" class="message">
+      <p>Select text on any webpage, then right-click and choose "Analyze with AI Detector"</p>
+    </div>
+
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Analyzing text...</p>
+    </div>
+
+    <div id="result" class="hidden">
+      <div class="score-container">
+        <div class="score-circle">
+          <span id="score-value">0</span>
+          <span class="percent">%</span>
+        </div>
+        <p id="score-label">AI Probability</p>
+      </div>
+
+      <div class="verdict" id="verdict"></div>
+
+      <div class="details">
+        <p><strong>Characters analyzed:</strong> <span id="char-count">0</span></p>
+        <p><strong>Words analyzed:</strong> <span id="word-count">0</span></p>
+      </div>
+
+      <button id="analyze-again" class="btn">Analyze New Selection</button>
+    </div>
+
+    <div id="error" class="hidden">
+      <p class="error-message" id="error-message"></p>
+      <button id="open-options" class="btn">Configure API Key</button>
+    </div>
+
+    <div class="footer">
+      <a href="#" id="settings-link">Settings</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
